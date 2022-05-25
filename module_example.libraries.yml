@@ -1,0 +1,5 @@
+inspiring_quote:
+  version: VERSION
+  css:
+    theme:
+      css/inspiring-quote.css: {}

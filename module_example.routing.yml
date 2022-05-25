@@ -1,0 +1,7 @@
+module_example.inspiration:
+  path: '/quote-of-the-day'
+  defaults:
+    _controller: '\Drupal\module_example\Controller\InspirationController::inspire'
+    _title: 'Quote of the Day'
+  requirements:
+    _permission: 'access content'

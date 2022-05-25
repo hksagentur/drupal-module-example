@@ -1,0 +1,11 @@
+parameters:
+  module_example.quotes:
+    - 'Tell me and I forget. Teach me and I remember. Involve me and I learn. - Benjamin Franklin'
+    - 'Whoever is happy will make others happy too. - Anne Frank'
+    - 'The journey of a thousand miles begins with one step. - Lao Tzu'
+
+services:
+  module_example.inspiring:
+    class: Drupal\module_example\Inspiring
+    arguments:
+      - '%module_example.quotes%'

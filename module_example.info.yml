@@ -1,0 +1,12 @@
+name: Module Example
+description: A sample module that demonstrates the use of various Drupal APIs
+type: module
+package: Custom
+
+php: 7.3
+core_version_requirement: ^8 || ^9
+
+configure: module_example.settings
+
+dependencies:
+  - drupal:field

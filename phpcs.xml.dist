@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="module_example">
+  <description>PHP CodeSniffer configuration for Drupal.</description>
+  <arg name="extensions" value="inc,install,module,php,profile,test,theme,yml"/>
+
+  <rule ref="Drupal" />
+  <rule ref="DrupalPractice"/>
+
+  <file>src</file>
+
+  <exclude-pattern>*/scripts</exclude-pattern>
+  <exclude-pattern>*/node_modules</exclude-pattern>
+  <exclude-pattern>*/patternlab</exclude-pattern>
+  <exclude-pattern>*/vendor</exclude-pattern>
+  <exclude-pattern>*/tests</exclude-pattern>
+</ruleset>

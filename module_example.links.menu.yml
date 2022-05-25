@@ -1,0 +1,4 @@
+module_example.settings:
+  title: 'Module Settings'
+  parent: system.admin_config_content
+  route_name: module_example.settings

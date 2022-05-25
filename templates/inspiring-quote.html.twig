@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default template to display a generated page of a company code.
+ *
+ * Available variables:
+ * - quote: The node entity representing the company code.
+ * - source: (optional) The source of the quote.
+ *
+ * @see template_preprocess_inspiring_quote()
+ */
+#}
+
+{% block quote %}
+  {{ attach_library('module_example/inspiring_quote') }}
+
+  <figure{{ attributes.addClass('inspiring-quote') }}>
+    <blockquote>
+      <p>
+        {{ quote }}
+      </p>
+    </blockquote>
+    {% if source %}
+      <figcaption>
+        — {{ source }}
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endblock %}

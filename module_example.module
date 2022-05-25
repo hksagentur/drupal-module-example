@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for the example module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function module_example_theme() {
+  return [
+    'inspiring_quote' => [
+      'file' => 'module_example.theme.inc',
+      'variables' => [
+        'quote' => NULL,
+      ],
+    ],
+  ];
+}
